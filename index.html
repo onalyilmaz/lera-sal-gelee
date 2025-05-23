@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yılmaz Onal - Lera Sal Gelee</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    max-width: 100vw;
+    max-height: 100vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+</style>
+</head>
+<body>
+  <img src="images/image.jpeg" alt="Lera Sal Gelee Haritası">
+
+  <audio autoplay loop hidden>
+    <source src="music/music.mp3" type="audio/mpeg">
+  </audio>
+  <audio autoplay loop>
+  <source src="music/music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('click', function () {
+    const audio = document.querySelector('audio');
+    if (audio) {
+      audio.play();
+    }
+  }, { once: true });
+</script>
+
+</body>
+</html>
